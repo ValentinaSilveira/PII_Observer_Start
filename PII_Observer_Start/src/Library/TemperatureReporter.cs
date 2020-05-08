@@ -8,14 +8,14 @@ namespace Observer
         private Temperature last;
         private IObservable provider;
 
-        public void StartReporting(IObservable provider)
+        public void StartReport(IObservable provider)
         {
             this.provider = provider;
             this.first = true;
             this.provider.Subscribe(this);
         }
 
-        public void StopReporting()
+        public void StopReport()
         {
             this.provider.UnSubscribe(this);
         }
