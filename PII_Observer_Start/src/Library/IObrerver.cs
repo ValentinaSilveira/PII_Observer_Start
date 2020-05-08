@@ -1,9 +1,9 @@
 
 public interface IObserver
 {
-    void StartReporting(IObservable provider);
+    void StartReport(IObservable provider);
 
-    void StopReporting();
+    void StopReport();
 
     void Update();
 }
