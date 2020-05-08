@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Observer
 {
@@ -8,7 +8,7 @@ namespace Observer
         {
             TemperatureSensor monitor = new TemperatureSensor();
             TemperatureReporter reporter = new TemperatureReporter();
-            reporter.StartReporting(monitor);
+            reporter.StartReport(monitor);
             monitor.GetTemperature();
         }
     }
